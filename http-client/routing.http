@@ -12,3 +12,9 @@ GET http://localhost:9000/routing/params/with/defualt
 
 ### デフォルト値付きパラメータ(2)
 GET http://localhost:9000/routing/params/with/defualt?param1=hey&param2=ho
+
+### オプションパラメータ(1)
+GET http://localhost:9000/routing/params/as/option
+
+### オプションパラメータ(2)
+GET http://localhost:9000/routing/params/as/option?param1=hey&param2=ho
