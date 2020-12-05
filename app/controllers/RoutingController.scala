@@ -21,4 +21,8 @@ class RoutingController @Inject()(val controllerComponents: ControllerComponents
     def paramsAsDouble(numbers: List[Double]): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
         Ok(s"numbers = ${numbers.mkString(",")}")
     }
+
+    def regex(number: Int, alphabet: String): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
+        Ok(s"number = $number, alphabet: $alphabet")
+    }
 }

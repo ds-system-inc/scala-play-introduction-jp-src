@@ -4,16 +4,17 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET        /                                   controllers.HomeController.index
+GET        /                                                       controllers.HomeController.index
 
 # Map static resources from the /public folder to the /assets URL path
-GET        /assets/*file                       controllers.Assets.versioned(path="/public", file: Asset)
+GET        /assets/*file                                           controllers.Assets.versioned(path="/public", file: Asset)
 
 # ルーティング
-GET        /routing/say/:param2                controllers.RoutingController.params(param1="say", param2)
-GET        /routing/:param1/:param2            controllers.RoutingController.params(param1, param2)
-GET        /routing/params                     controllers.RoutingController.params(param1, param2)
-GET        /routing/params/with/defualt        controllers.RoutingController.params(param1?="defualt1", param2?="defualt2")
-GET        /routing/params/as/option           controllers.RoutingController.paramsAsOption(param1: Option[String], param2: Option[String])
-GET        /routing/:number/as/int             controllers.RoutingController.paramAsInt(number: Int) 
-GET        /routing/numbers/as/double          controllers.RoutingController.paramsAsDouble(numbers: List[Double]) 
+GET        /routing/say/:param2                                    controllers.RoutingController.params(param1="say", param2)
+GET        /routing/:param1/:param2                                controllers.RoutingController.params(param1, param2)
+GET        /routing/params                                         controllers.RoutingController.params(param1, param2)
+GET        /routing/params/with/defualt                            controllers.RoutingController.params(param1?="defualt1", param2?="defualt2")
+GET        /routing/params/as/option                               controllers.RoutingController.paramsAsOption(param1: Option[String], param2: Option[String])
+GET        /routing/:number/as/int                                 controllers.RoutingController.paramAsInt(number: Int) 
+GET        /routing/numbers/as/double                              controllers.RoutingController.paramsAsDouble(numbers: List[Double]) 
+GET        /routing/reg/$number<[0-9]+>/$alphabet<[a-zA-Z]>        controllers.RoutingController.regex(number:Int, alphabet:String)
