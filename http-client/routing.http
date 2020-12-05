@@ -1,0 +1,2 @@
+### パラメータを含むURL
+GET http://localhost:9000/routing/hi/ho
