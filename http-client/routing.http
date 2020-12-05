@@ -3,3 +3,6 @@ GET http://localhost:9000/routing/hi/ho
 
 ### クリストリングの束縛
 GET http://localhost:9000/routing/params?param1=hey&param2=ho
+
+### 固定値パラメータ
+GET http://localhost:9000/routing/say/yay
