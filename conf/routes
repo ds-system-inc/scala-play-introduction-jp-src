@@ -15,3 +15,4 @@ GET        /routing/:param1/:param2            controllers.RoutingController.par
 GET        /routing/params                     controllers.RoutingController.params(param1, param2)
 GET        /routing/params/with/defualt        controllers.RoutingController.params(param1?="defualt1", param2?="defualt2")
 GET        /routing/params/as/option           controllers.RoutingController.paramsAsOption(param1: Option[String], param2: Option[String])
+GET        /routing/:number/as/int             controllers.RoutingController.paramAsInt(number: Int) 

@@ -18,3 +18,6 @@ GET http://localhost:9000/routing/params/as/option
 
 ### オプションパラメータ(2)
 GET http://localhost:9000/routing/params/as/option?param1=hey&param2=ho
+
+### 型付きパラメータ
+GET http://localhost:9000/routing/123/as/int
