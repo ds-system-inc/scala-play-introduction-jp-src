@@ -11,3 +11,4 @@ GET        /assets/*file                   controllers.Assets.versioned(path="/p
 
 # ルーティング
 GET        /routing/:param1/:param2        controllers.RoutingController.params(param1, param2)
+GET        /routing/params                 controllers.RoutingController.params(param1, param2)
