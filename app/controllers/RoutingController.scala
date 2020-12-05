@@ -17,4 +17,8 @@ class RoutingController @Inject()(val controllerComponents: ControllerComponents
     def paramAsInt(number: Int): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
         Ok(s"number = $number")
     }
+
+    def paramsAsDouble(numbers: List[Double]): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
+        Ok(s"numbers = ${numbers.mkString(",")}")
+    }
 }
